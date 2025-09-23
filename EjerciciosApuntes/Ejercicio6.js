@@ -1,14 +1,12 @@
-function secuenciaFibonacci(){
+let numeroLimite = parseInt(prompt("Introduzca el número límite"));
 
-    let numeroLimite= prompt("Introduzca un número");
-    let inicioFibonacci=2;
-    let resultado;
+function secuenciaFibonacci(n){
 
-    
-    
-
-
-
-
+     if(n < 2)
+        return n;
+         return secuenciaFibonacci(n - 1) +  secuenciaFibonacci(n - 2);
+}
+     for(let i = 0; i <= numeroLimite; i++){
+     console.log(secuenciaFibonacci(i));
 }
 secuenciaFibonacci();
