@@ -11,8 +11,6 @@ for(let i = 0; i < partes.length; i++){
     array.push(Number(partes[i]));
 }
 
-array.push(numeros);
-
 console.log(array);
 
 
