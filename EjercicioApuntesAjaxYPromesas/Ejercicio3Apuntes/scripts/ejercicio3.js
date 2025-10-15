@@ -1,6 +1,6 @@
 function recuperarDatos() {
-    fetch("https://jsonplaceholder.typicode.com/uses") 
- .then(response =>response.status) 
+    fetch("https://jsonplaceholder.typicode.com/todos/55") 
+ .then(response => response.json()) 
  .then(datosUsuarios => mostrarDatos(datosUsuarios)) 
  .catch(error => console.error(error));  
 }
@@ -13,10 +13,10 @@ function mostrarDatos(infoPosts) {
     const newPost = document.createElement("tr");
     newPost.innerHTML = `
                 
-                <td>${usuario.name}</td>
-                <td>${usuario.email}</td>`;
+                <td>${usuario.userId}</td>
+                <td>${usuario.id}</td>
+                <td>${usuario.title}</td>
+                <td>${usuario.completed}</td>`;
     tbody.appendChild(newPost);
   });
-
-
 }
