@@ -1,19 +1,8 @@
-function modificarUsuario(){    
-let URL = "https://jsonplaceholder.typicode.com/todos/76" ;
-let modificaUser = {
-    userId: 4,
-    id: 76,
-    title: "tarea modificada",
-    completed: true 
-};
-let init = {
-    method: 'PUT',
-    body: JSON.stringify(modificaUser),
-    headers: {'Content-Type':'application/json'}
-};
+function borrarUsuario(){
 
-fetch(URL, init)
- .then(response => {
+   fetch('https://jsonplaceholder.typicode.com/todos/32', {
+    method: 'DELETE',
+}).then(response => {
       alert("Código de respuesta: "+ response.status); // 👈 aquí ves el código (200, 404, etc.)
       
       if (!response.ok) {
