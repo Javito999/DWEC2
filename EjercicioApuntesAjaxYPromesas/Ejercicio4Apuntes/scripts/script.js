@@ -1,23 +1,30 @@
 function buscaAnimal(){
 
-    fetch("https://localhost:3000/animales")
+  let animalSeleccionado = document.getElementById("opcion").value;
+  const url = 'http://localhost:3000/animales';
+
+    fetch(url)
     .then(response => response.json())
-    .then(datosAnimales=>console.log(datosAnimales))
+    .then(datosAnimales=>{
+      let filtrados = datosAnimales.filter(a=> a.Tipo === animalSeleccionado);
+      mostrarAnimales(filtrados);
+
+    })
+      
     .catch(err=>console.error(err));
 
 }
 
-function mostrarAnimales(infoPosts) {
+function mostrarAnimales(animales) {
   let tbody = document.getElementsByTagName("tbody")[0];
   tbody.innerHTML = "";
-  infoPosts.forEach((animales) => {
+  animales.forEach(a => {
     const newPost = document.createElement("tr");
     newPost.innerHTML = `
                 
-                <td>${animales.id}</td>
-                <td>${animales.Tipo}</td>
-                <td>${animales.Nombre}</td>
-                <td>${animales.Observacion}</td>`;
+                
+                <td>${a.Nombre}</td>
+                <td>${a.Rasgos}</td>`;
     tbody.appendChild(newPost);
   });
 }

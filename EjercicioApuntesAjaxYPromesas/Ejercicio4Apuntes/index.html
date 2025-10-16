@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
 </head>
 <body>
-    <form>
-  Selecciona tu animal favorito:
-  <select id="mySelect">
-    <option value="Perro">Perro</option>
-    <option value="Gato">Gato</option>
-    <option value="Caballo">Caballo</option>
-    <option value="Pajaro">Pajaro</option>
-  </select>
-</form>
-    <button type="button" onclick="buscaAnimal()">Pulsa aquí</button>
+  <h2>Consulta de animales</h2>
+
+  <form>
+    <label for="opcion">Selecciona tu animal favorito:</label>
+    <select id="opcion">
+      <option value="Perro">Perro</option>
+      <option value="Gato">Gato</option>
+      <option value="Caballo">Caballo</option>
+      <option value="Pajaro">Pájaro</option>
+    </select>
+  </form>
+
+  <button type="button" onclick="buscaAnimal()">Solicitar información</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Rasgos</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
