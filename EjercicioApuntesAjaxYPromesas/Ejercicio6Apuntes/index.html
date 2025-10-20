@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="./CSS/css.css">
+</head>
+<body>
+    <form action="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <br><br>
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni">
+        <label for="fechaNacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+        <h4>Sexo</h4>
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="hombre" id="hombre">
+        <label for="mujer">mujer</label>
+        <input type="radio" name="mujer" id="mujer">
+        <br><br>
+        <select id="opcion1">
+             <option value="ext">Deportes de exterior</option>
+             <option value="equi">Deportes de interior</option>
+             
+        </select>
+        <select id="opcion2">
+             <option value="indv">Deportes individuales</option>
+             <option value="int">Deportes de equipo</option>
+             
+        </select>
+        <br><br>
+        <button onclick="nuevoCliente()">Enviar</button>
+        <br><br><br>
+        <table>
+            <thead>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Apellidos</td>
+                <td>DNI</td>
+                <td>Fecha nacimiento</td>
+                <td>Sexo</td>
+                <td>Preferencias</td>
+            </thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+            
+
+
+    </form>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
