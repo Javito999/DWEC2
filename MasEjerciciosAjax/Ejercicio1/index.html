@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5</title>
+  <link rel="stylesheet" href="./estilos/CSS.css">
+</head>
+<body onload="cargaPaises()">
+
+ 
+  <form id="formulario1" >
+    <label for="selectPais" >País:</label>
+    <select id="selectPais" onchange="cargaCiudades()" required>
+      <option value="" >Selecciona un país</option>
+    </select>
+
+    <label for="selectCiudad">Ciudad:</label>
+    <select id="selectCiudad" required>
+      <option value="">Selecciona una ciudad</option>
+    </select>
+
+    <button type="submit">Mostrar Monumentos</button>
+  </form>
+
+ 
+  <form id="formulario2">
+    <label for="pais">País:</label>
+    <input type="text" id="pais" name="pais" required>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
+
+    <label for="monumento">Monumento:</label>
+    <input type="text" id="monumento" name="monumento" required>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+
+  <table id="tablaMonumentos">
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>Ciudad</th>
+        <th>Monumento</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="./scripts/scrript.js"></script>
+</body>
+</html>

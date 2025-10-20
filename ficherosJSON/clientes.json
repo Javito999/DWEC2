@@ -1,0 +1,48 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Sonia",
+      "apellidos": "Gutiérrez García",
+      "dni": "12345678A",
+      "fechaNacimiento": "2010-10-10",
+      "sexo": "M",
+      "preferencias": "ext_int"
+    },
+    {
+      "id": "2",
+      "nombre": "Carlos",
+      "apellidos": "López Fernández",
+      "dni": "87654321B",
+      "fechaNacimiento": "1995-03-22",
+      "sexo": "H",
+      "preferencias": "equi_ext"
+    },
+    {
+      "id": "3",
+      "nombre": "Lucía",
+      "apellidos": "Martín Pérez",
+      "dni": "11223344C",
+      "fechaNacimiento": "2001-07-15",
+      "sexo": "M",
+      "preferencias": "indv_int"
+    },
+    {
+      "id": "4",
+      "nombre": "Javier",
+      "apellidos": "Ruiz Ortega",
+      "dni": "99887766D",
+      "fechaNacimiento": "1988-12-05",
+      "sexo": "H",
+      "preferencias": "ext_indv"
+    },
+    {
+      "id": "e7ec",
+      "nombre": "Javier",
+      "apellidos": "GAr",
+      "dni": "",
+      "fechaNacimiento": "",
+      "preferencias": ""
+    }
+  ]
+}
