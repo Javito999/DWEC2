@@ -1,7 +1,14 @@
 function focoNombre(){
 
-let input = document.getElementById('boton1');
+    let cajaNombre = document.getElementById("nombre");
 
-input.focus();
+    cajaNombre.focus();
+
+}
+function quitaFoco(){
+
+   let cajaNombre = document.getElementById("nombre");
+
+   cajaNombre.blur();
 
 }
