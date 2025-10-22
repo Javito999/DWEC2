@@ -10,5 +10,5 @@ console.log(input);
 
 //siguiente
 let inpuSeleccionado = document.querySelector('input[name=sexo]:checked');
-
+console.log(inpuSeleccionado);
 
