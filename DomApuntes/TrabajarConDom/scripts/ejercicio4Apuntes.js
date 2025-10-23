@@ -39,7 +39,7 @@ function clonaDiv(){
     let divClonado = lista.cloneNode(true);
 
     //mete la lista clonada, justo antes del div(seccionSegunda)
-
+    //es incorrecto, el ejercicio pide que sea despues, no antes.
     seccionSegunda.parentNode.insertBefore(nuevoDiv, seccionSegunda);
 
     nuevoDiv.appendChild(divClonado);
@@ -47,7 +47,13 @@ function clonaDiv(){
 }
 function eliminaFila(){
 
+    let conjuntoDivs = document.getElementsByTagName('div');
+
+    let ultimoDiv = conjuntoDivs[conjuntoDivs.length-1];
+
+    let lista = ultimoDiv.lastElementChild;
     
+    lista.removeChild.lastElementChild;
 
 
 }
