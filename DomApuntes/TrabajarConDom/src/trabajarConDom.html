@@ -40,7 +40,7 @@
             </ul>
         </div>
         <div id="seccionFormulario">
-            <h2>Un formulario</h2>
+            <h2 onmouseover="anhadeAtributoName()">Un formulario</h2>
             <form action="#">
                 <label for="nombre">Nombre: </label>
                 <input id="nombre" type="text" size="20"><br>
@@ -48,7 +48,7 @@
                 <input id="apellido1" type="text" size="20"><br>
                 <label for="apellido2">2do apellido: </label>
                 <input id="apellido2" type="text" size="20"><br>
-                <label>Escoge el sexo:<br></label>
+                <label onmouseover="quitaAtributoName()">Escoge el sexo:<br></label>
                 <input type="radio" name="sexo" value="H">Hombre
                 <input type="radio" name="sexo" value="M">Mujer<br>
                 <button type="button" id="boton1" size="20" onclick="focoNombre()"> Aceptar</button>
