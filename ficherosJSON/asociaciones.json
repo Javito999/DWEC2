@@ -1,0 +1,384 @@
+{
+  "organizaciones": [
+    {
+      "id": "1",
+      "nombre": "Love Project",
+      "acogida": false,
+      "rangoEdad": "infancia"
+    },
+    {
+      "id": "2",
+      "nombre": "Soleil",
+      "multiraza": true,
+      "ambito": "internacional"
+    },
+    {
+      "id": "3",
+      "nombre": "Acair",
+      "acogida": true,
+      "rangoEdad": "adolescencia"
+    },
+    {
+      "id": "4",
+      "nombre": "Acción contra el hambre",
+      "acogida": false,
+      "rangoEdad": "tercera edad"
+    },
+    {
+      "id": "5",
+      "nombre": "Acción para el desarr",
+      "multiraza": false,
+      "ambito": "local"
+    },
+    {
+      "id": "6",
+      "nombre": "ACCU",
+      "acogida": false,
+      "rangoEdad": "infancia"
+    },
+    {
+      "id": "7",
+      "nombre": "Achalay",
+      "acogida": true,
+      "rangoEdad": "adolescencia"
+    },
+    {
+      "id": "8",
+      "nombre": "A compartir",
+      "multiraza": true,
+      "ambito": "nacional"
+    },
+    {
+      "id": "9",
+      "nombre": "Adama",
+      "multiraza": false,
+      "ambito": "internacional"
+    },
+    {
+      "id": "10",
+      "nombre": "Luchemos por la vida",
+      "acogida": false,
+      "rangoEdad": "tercera edad"
+    }
+  ],
+  "tramiteDonacion": [
+    {
+      "id": "1",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": 1,
+          "importeTotal": 52.3,
+          "numDonaciones": 3
+        }
+      ]
+    },
+    {
+      "id": "54ea",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "1",
+          "importeTotal": 13,
+          "numDonaciones": 2
+        },
+        {
+          "idOrganizacion": "3",
+          "importeTotal": 10,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "e35b",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "9",
+          "importeTotal": 10,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "8",
+          "importeTotal": 15,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "f8ba",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "6",
+          "importeTotal": 10,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "3",
+          "importeTotal": 45,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "fbb8",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "4",
+          "importeTotal": 4,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "3",
+          "importeTotal": 23,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "bf6c",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "4",
+          "importeTotal": 1,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "3",
+          "importeTotal": 3,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "cd71",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 78,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "c612",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 4,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "7",
+          "importeTotal": 6,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "3",
+          "importeTotal": 6,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "3f0d",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 45,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "6",
+          "importeTotal": 5,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "5",
+          "importeTotal": 56,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "e894",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "1",
+          "importeTotal": 3,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "d7c4",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 65,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "7",
+          "importeTotal": 5,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "3",
+          "importeTotal": 6,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "1124",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 34,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "5",
+          "importeTotal": 34,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "e4f7",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 23,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "1",
+          "importeTotal": 23,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "a209",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 45,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "1",
+          "importeTotal": 45,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "8e42",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 56,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "1",
+          "importeTotal": 40,
+          "numDonaciones": 2
+        }
+      ]
+    },
+    {
+      "id": "2b97",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 5703,
+          "numDonaciones": 9
+        }
+      ]
+    },
+    {
+      "id": "4bd8",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "2",
+          "importeTotal": 45,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "10",
+          "importeTotal": 454,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "1",
+          "importeTotal": 45,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "9",
+          "importeTotal": 445,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "7",
+          "importeTotal": 544,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "6",
+          "importeTotal": 454,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "5",
+          "importeTotal": 4,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "4",
+          "importeTotal": 54,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "3",
+          "importeTotal": 54,
+          "numDonaciones": 1
+        },
+        {
+          "idOrganizacion": "8",
+          "importeTotal": 55,
+          "numDonaciones": 1
+        }
+      ]
+    },
+    {
+      "id": "31ff",
+      "fecha": "11/2025",
+      "donaciones": [
+        {
+          "idOrganizacion": "1",
+          "importeTotal": 10,
+          "numDonaciones": 2
+        }
+      ]
+    }
+  ]
+}
