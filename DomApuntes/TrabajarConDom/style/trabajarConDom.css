@@ -46,3 +46,12 @@ form label {
     display: inline-block;
     width: 100px;
 }
+.parrafosNormal{
+    background-color: rgb(169, 212, 212);
+    font-family: 'Courier New', Courier, monospace;
+}
+.parrafosEspecial{
+    background-color: brown;
+    font-weight: bold;
+
+}
