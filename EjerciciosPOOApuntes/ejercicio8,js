@@ -1,0 +1,21 @@
+let fechaNacimiento1 = new Date('01-09-1979');
+console.log(fechaNacimiento1);
+let fechaNacimiento2 = new Date('1979-01-09');
+console.log(fechaNacimiento2);
+
+console.log(fechaNacimiento1.getDay());
+
+fechaNacimiento1.setFullYear('2025');
+console.log(fechaNacimiento1);
+
+console.log(fechaNacimiento1.getDay());
+
+fechaNacimiento1.getTime();
+console.log(fechaNacimiento1);
+
+const hoy = new Date();
+const milisegundosPorDia = 1000 * 60 * 60 *24;
+
+let diasPasados = (hoy - fechaNacimiento2) / milisegundosPorDia;
+
+console.log(diasPasados);
