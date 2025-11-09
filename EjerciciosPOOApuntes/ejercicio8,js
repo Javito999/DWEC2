@@ -19,3 +19,65 @@ const milisegundosPorDia = 1000 * 60 * 60 *24;
 let diasPasados = (hoy - fechaNacimiento2) / milisegundosPorDia;
 
 console.log(diasPasados);
+
+//segunda parte
+
+function fechaNavidad(){
+
+    let nocheVieja = new Date('2000-12-31');
+
+    let otraFecha = nocheVieja.getDate();
+  	console.log(otraFecha);
+
+    let cambiaAnho = otraFecha.setDate(+1);
+    console.log(cambiaAnho);
+    //no funciona porqueel valor recuperado con getDate()
+    //es un número, no un objeto tipo Date(). Para ello habría que:
+    // let otraFecha = new Date(nocheVieja);
+}fechaNavidad();
+
+//siguientes:
+
+const fcheHoy = new Date();
+
+console.log(fcheHoy.toDateString());
+console.log(fcheHoy.toLocaleTimeString());
+console.log(fcheHoy.toUTCString());
+console.log(fcheHoy.toLocaleString());
+console.log(fcheHoy.toTimeString());
+//siguiente
+
+if(fcheHoy < fechaNacimiento2){
+    console.log('Más viejo que la tos')
+}else {
+    console.log('Jovencísimo');
+};
+//siguiente
+
+function diaMesAnho(anho, mes){
+
+    let fecha = new Date(anho, mes, 0);
+
+    return fecha.getDate();
+
+}diaMesAnho();
+
+console.log(diaMesAnho(1987, 2));
+
+//siguiente
+
+function comparaFechas(fecha1, fecha2){
+
+     let f1 = new Date(fecha1);
+     let f2 = new Date(fecha2);
+
+    if(fecha1 > fecha2){
+        alert('La primera es mayor que la segunda')
+    }else if(fecha1 === fecha2){
+        alert('Las fechas son iguales')
+    }else if(fecha1 < fecha2){
+        alert('La segunda es mayor que la primera')
+    }
+
+
+}comparaFechas('2000-12-31', '1979-01-09');
