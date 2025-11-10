@@ -99,5 +99,34 @@ function cambiarEstilos() {
    document.getElementById('cambiaH2').removeEventListener('dblclick', cambiarEstilos);
 }
 
-    
+//añadir elemento nuevo al h1
+
+
+   
+
+let nuevoElemento = document.createElement("div");
+nuevoElemento.id = "infoEvento";
+nuevoElemento.textContent = "Posición del puntero:";
+
+let h1 = document.querySelector("h1");
+h1.insertAdjacentElement("afterend", nuevoElemento);
+
+
+
+document.body.addEventListener('mousemove', muestraPuntero);
+
+function muestraPuntero(event) {
+    let info = document.getElementById("infoEvento");
+
+    info.textContent =
+        "Pantalla → X: " + event.screenX + " | Y: " + event.screenY +
+        "   |   Página → X: " + event.pageX + " | Y: " + event.pageY;
+}
+
+
+
+document.body.addEventListener('keydown', function (event) {
+    alert("Tecla: " + event.key + "\n" + "keyCode: " + event.keyCode);
+});
+
 
