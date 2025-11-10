@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let deporte = document.getElementById("deporte");
 let boton = document.getElementById("recarga");
 let cuadriculas = document.getElementsByTagName("td");
@@ -11,6 +12,20 @@ for(let i = 0; i<filas; i++){
     calendario[i] = [];
     for(let j = 0; i<columnas; j++){
         calendario[i][j] = i * columnas + j;
+=======
+const casillas = document.getElementsByTagName('td');
+let inputTexto = document.getElementById('deporte');
+let inputRecarga = document.getElementById('recarga');
+
+const calendario = [];
+const fila = 6;
+const columna = 7;
+
+for(let i = 0; i < fila; i++){
+    calendario[i] = [];
+    for(let j = 0; j < columna; j++){
+        calendario[i][j] =  null;
+>>>>>>> 88d823b49d0901203915322aae3ea5f40c28aea4
     }
 }
 
@@ -18,6 +33,7 @@ for(let i = 0; i<filas; i++){
 
 
 function nuevoCalendario(){
+<<<<<<< HEAD
     let escribirNumero = 1;
 if(deporte === null){
     return;
@@ -50,5 +66,21 @@ function barraLateral(){
 
 function limpiarProceso(){
     calendario = [].fill("");
+=======
+
+if(inputTexto === null){
+    return;
+}
+
+if(inputTexto !== null){
+    
+
+
+}
+
+
+
+
+>>>>>>> 88d823b49d0901203915322aae3ea5f40c28aea4
 
 }
