@@ -113,7 +113,7 @@ h1.insertAdjacentElement("afterend", nuevoElemento);
 
 
 
-document.body.addEventListener('mousemove', muestraPuntero);
+document.body.addEventListener('mousemove', muestraPuntero);//document.body en lugar de document.getelementbytag, este ultimo no devuelve el elemento, sino una coleccion
 
 function muestraPuntero(event) {
     let info = document.getElementById("infoEvento");
