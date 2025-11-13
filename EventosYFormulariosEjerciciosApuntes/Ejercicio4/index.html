@@ -9,24 +9,31 @@
 </head>
 <body>
 
-    <form id="formulario1" name="formulario1" method="post">
+    <form id="formulario1" name="formulario1" method="" action="">
 		
-		<input type="text" id="tlfn" onkeypress="return validarNum (evnt)"/><br><br>
+		<input type="text" id="tlfn" onkeypress="return validarNum (event)"/><br><br>
+
         <label for="franja1">Franja de 6:00 a 14:00</label>
-        <input type="checkbox" name="franja1"><br>
+        <input type="checkbox" name="franja1" id="franja1"><br>
         <label for="franja2">Franja de 14:00 a 20:00</label>
-        <input type="checkbox" name="franja2"><br>
+        <input type="checkbox" name="franja2" id="franja2"><br>
         <label for="franja3">Franja de 20:00  a 01:00</label>
-        <input type="checkbox" name="franja3"><br>
+        <input type="checkbox" name="franja3" id="franja3"><br>
+
         <p>Es de prepago?</p>Sí<input type="radio" name="prepago">No<input type="radio" name="prepago" >
-        <br>
-        <select name="compañias" id="compañias" aria-placeholder="Compañías">
+        <br><br>
+        <select name="compañias" id="compañias">
+            <option value="">Seleccione una companía</option>
             <option value="movistar">Movistar</option>
             <option value="orange">Orange</option>
             <option value="pepe">PepePhone</option>
             <option value="vodafone">Vodafone</option>
             <option value="o2">O2</option>
-        </select>
+        </select><br><br>
+        <p>Observaciones</p>
+        <textarea name="textArea" id="TexArea" maxlength="140" cols="35" rows="7"></textarea>
+        <br><br>
+        <button>Enviar</button>
 
 		
 	</form>
