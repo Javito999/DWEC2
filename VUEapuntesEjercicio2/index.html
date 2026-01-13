@@ -5,15 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="./js/main.js">
+    <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 <body>
 
     <div id="app">
+
+        <input type="text" v-if="tipo === 'input'">
+        
+        <span v-else-if="tipo === 'texto'" >Esto es un span</span>
+        
+        <table v-else-if="tipo === 'tabla'">
+            
+            <tr>
+                <td>Columna1</td>
+                <td>Columna2</td>
+                
+            </tr>
+           
+        </table>
+        
         
 
 
     </div>
     <div id="lista">
+        <table>
+            <tr>
+                <th>DNI</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
         
 
     </div>

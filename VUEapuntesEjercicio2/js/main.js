@@ -1,22 +1,34 @@
 const { createApp, ref, reactive } = Vue;
 
 const app = createApp({
+    setup(){
+       
+        const tipo = ref("input");
+        
 
+         return{
+        
+        tipo
+
+    };
+    }
 
 });
 
 
 const lista = createApp({
-    setup(){}
+    setup(){
 
     const personas = reactive([
-        {dni:12234422, nombre:'Paco', aplellidos:'Márquez Gómez'},
-        {dni:14563344, nombre:'Silvia', aplellidos:'Sánchez Gómez'},
-        {dni:23454422, nombre:'Fernando', aplellidos:'Estévez Rodriguez'},
-    ])
+        {dni:12234422, nombre:'Paco', apellidos:'Márquez Gómez'},
+        {dni:14563344, nombre:'Silvia', apellidos:'Sánchez Gómez'},
+        {dni:23454422, nombre:'Fernando', apellidos:'Estévez Rodriguez'},
+    ]);
 
-    
+    return{
+        personas
+    };
 
 
-
+    }
 });
