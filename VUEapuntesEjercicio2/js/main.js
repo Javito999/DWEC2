@@ -3,7 +3,7 @@ const { createApp, ref, reactive } = Vue;
 const app = createApp({
     setup(){
        
-        const tipo = ref("input");
+        const tipo = ref("texto");
         
 
          return{
