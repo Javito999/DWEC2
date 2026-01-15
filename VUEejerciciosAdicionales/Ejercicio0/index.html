@@ -16,17 +16,21 @@
         <p id="p2">{{edad*3}} </p>
         <p id="p3">{{numeroAleatorio}} </p>
         <div id="div1">
-           
-                <img :src="imagen" v-bind:alt="textoImagen">
-            
+
+            <img :src="imagen" v-bind:alt="textoImagen">
+
         </div>
         <div id="div2">
             <input type="text" v-model="nombre">
         </div>
         <div id="div3">
-            <div v-for="(enlace, index) in enlaces" :key="index">Enlace{{index+1}} <a v-bind:href="enlace"></a></div>
+            <ul>
+                <li>
+                    <a v-for="(enlace,index) in enlaces" :key="index" :href="enlace">Enlace{{index+1}}</a>
+                </li>
+            </ul>
         </div>
-        <a v-for="" :href=""></a>
+
     </div>
     <script>
         app.mount("#app");
