@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecicio1</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <script src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <h1>INFORMACION BANCARIA</h1>
+    <div>
+        <div class="datos-personales">
+            <p>Nombre:</p>
+            <p>Apellidos:</p>
+            <p>Dirección:</p>
+            <p>Teléfono:</p>
+            <p>Estado civil</p>
+
+        </div>
+
+        <div id="lista">
+            <table class="datos-bancarios">
+                <tr>
+                    <th>Id</th>
+                    <th>Producto</th>
+                    <th>Saldo disponible</th>
+
+                </tr>
+                <tr v-for="producto in productos" :key="producto.id">
+                    <td>{{producto.id}}</td>
+                    <td>{{producto.nombre}}</td>
+                    <td>{{producto.saldo}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="datos-cuenta">
+            <p>Nombre de la entidad: </p>
+            <p>Direcciñon de la sucursal: </p>
+            <p>Teléfono de contacto: </p>
+            <p>Horario de atención al público: </p>
+            <ul>
+                <li>Lunes-Miércoles: 8:00-15:00</li>
+                <li>Jueves: 8:00-19:00</li>
+                <li>Viernes: 8:00-14:00</li>
+                <li>Sábado y Domingo: Cerrado</li>
+            </ul>
+        </div>
+
+
+
+
+
+    </div>
+    <script>
+        const mounteApp1 = lista.mount('#lista');
+    </script>
+
+</body>
+
+</html>
